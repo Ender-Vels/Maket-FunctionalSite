@@ -15,5 +15,4 @@ export default {
 </template>
 
 <style>
-@import "style.css";
 </style>

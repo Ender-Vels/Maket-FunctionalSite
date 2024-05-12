@@ -1,5 +1,12 @@
 <script>
-
+import WhyUs from '../WhyUs/WhyUs.vue'
+import PricingBlock from '../Pricing/PricingBlock.vue'
+export default {
+  components:{
+    WhyUs,
+    PricingBlock
+  }
+}
 </script>
 
 <template>
@@ -14,7 +21,8 @@
               <li><a class="nav-item ms-1 text-muted text-decoration-none link-danger fs-5" href="#"><ins>Email</ins></a></li>
           </ul>
       </nav>
-      <div class="d-inline-flex">
+
+      <div class="d-flex justify-content-between">
     <div class="col-5 d-flex flex-column  justify-content-center">
     <div class="container mt-5 ">
         <p  class="fs-1 fw-bold ">Premium Web Hosting for Your Website</p>
@@ -27,13 +35,19 @@
       </div>
 
   </div>
-        <div class="container">
-    <img class="img-fluid " src="../../assets/hero/photo.png" alt="img">
+
+        <div class="container ms-5">
+    <img class="ms-5 " src="../../assets/hero/photo.png" alt="img">
         </div>
 
   </div>
   </div>
 </div>
+  <WhyUs/>
+  <PricingBlock/>
+  <div class="container-fluid mt-5">
+    <img class="container-fluid" src="../../assets/header/Background.png" alt="">
+  </div>
 </template>
 
 <style>
